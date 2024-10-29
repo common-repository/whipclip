@@ -1,0 +1,88 @@
+/* Yup */
+.whipclip-content { height: 100%; }
+
+/* Center Content */
+.whipclip-browser-container { position: absolute; left: 0; height: 100%; }
+@media only screen and (min-width: 640px) { 
+	.whipclip-browser-container { right: 303px; }
+}
+
+/* Title Bar */
+.whipclip-title-bar { position: relative; }
+.whipclip-title-bar .whipclip-title { position: absolute; }
+.whipclip-title-bar .whipclip-title-bar-right { position: relative; top: 2px; right: 4px; line-height: 45px; float: right; margin-right: 40px; }
+
+#get-updates .text-input { width: 260px; }
+#get-updates .button { position: relative; top: 8px; }
+
+/* Sidebar */
+.whipclip-sidebar-container { background: #F5F5F5; border-left: 1px solid #DFDFDF; position: absolute; right: 0; top: 0; bottom: 0; }
+.whipclip-sidebar { padding: 0 16px; max-height: 100%; overflow: auto; }
+.whipclip-sidebar .media-sidebar { padding-top: 16px; }
+
+/* Show Filter */
+#whipclip-filter { padding: 15px 6px 0px 6px; font-weight:bold; }
+#whipclip-filter select { margin-left: 5px; border-radius:0px; -webkit-border-radius:0px; }
+
+/* Search */
+#whipclip-search { padding: 1px 95px 0 6px; position: relative; }
+#whipclip-search #whipclip-search-input { width: 100%; font-size: 120% !important; }
+#whipclip-search .media-button-searchButton { position: absolute; top: 12px; right: 6px; width: 80px; text-align: center; }
+
+/* Header Text */
+.whipclip-header { padding: 15px 0 0 8px; margin: 0px 0px 8px 0px; color: #4e5767; font-family: 'Open Sans', sans-serif; font-size: 25px; font-weight: normal; line-height: 25px; display: inline-block; }
+.whipclip-header small { font-style:italic; font-size: 25px; text-transform: none; }
+
+#whipclip-header-2 { display:inline-block }
+
+/* Back Button */
+#whipclip-back { display:inline-block; margin: 25px 15px 0px 6px; text-decoration: none; display:none; float: right; }
+
+/* User Results */
+.whipclip-user-on { display:none; }
+
+/* Results */
+.whipclip-grid-type { overflow: auto; width: calc(100% - 10px); padding: 10px 0 0 10px; height: 75%;}
+
+.whipclip-grid-type::-webkit-scrollbar { -webkit-appearance: none; width: 7px; }
+.whipclip-grid-type::-webkit-scrollbar-thumb { border-radius: 4px; background-color: rgba(0,0,0,.3); -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5); }
+
+.whipclip-grid-type .whipclip-post { width: 100%; padding: 0px; margin: 0 10px 10px 0; display: inline-block; float: left; cursor: pointer; position: relative; }
+.whipclip-grid-type .whipclip-post .whipclip-image-container { background: #000; position: relative; overflow: hidden; width: 100%; height: 0; padding: 0 0 56.25% 0; display:block; }
+.whipclip-grid-type .whipclip-post .whipclip-image-container:after { content: ''; background-image:linear-gradient(187deg, rgba(0,0,0,0) 50%, #000 98%); width:100%; height: 100%; position: absolute; top: 0; left: 0; -webkit-transition: all .2s linear; -moz-transition: all .2s linear; -o-transition: all .2s linear; transition: all .2s linear;  }
+
+.whipclip-grid-type .whipclip-post .whipclip-image-container span { opacity:0; color:#fff; font-family: 'FontAwesome'; content: "\f04b"; font-size: 2.2em; position:absolute; top:50%; left:50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: all .3s linear; -moz-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+
+.whipclip-grid-type .whipclip-post .whipclip-image-container img { width: 100%; height: 100%; position: absolute; top: 0; left: 0; -webkit-transition: all .3s linear; -moz-transition: all .3s linear; -o-transition: all .3s linear; transition: all .3s linear; }
+
+.whipclip-grid-type .whipclip-post .whipclip-post-description { position: absolute; bottom: 5px; left: 0px; padding: 0 0 0 7px; width: calc(100% - 25px); }
+.whipclip-grid-type .whipclip-post .whipclip-post-description .name { white-space: nowrap; font-size: 14px; margin: 0 0 2px 0; color: #FFF; text-shadow: 0 0 5px black; text-overflow: ellipsis; overflow: hidden; }
+.whipclip-grid-type .whipclip-post .whipclip-post-description .description { white-space: nowrap; font-size: 11px; font-weight: 100; margin: 0; color: #FFF; text-shadow: 0 0 5px black; text-overflow: ellipsis; overflow: hidden; }
+
+/* Hover Effect */
+.whipclip-grid-type .whipclip-post:hover .whipclip-image-container img { /* width: 105%; height: 105%; */ }
+.whipclip-grid-type .whipclip-post:hover .whipclip-image-container span { opacity: 1; }
+
+
+/* Selected Clip */
+.whipclip-grid-type .whipclip-post.selected { -webkit-box-shadow: 0 0 4px 4px #1e8cbb; box-shadow: 0 0 4px 4px #1e8cbb; }
+
+/* Number of columns */
+@media only screen and (min-width: 670px) { .whipclip-grid-type .whipclip-post { width: calc(50% - 10px); } }
+@media only screen and (min-width: 1100px) { .whipclip-grid-type .whipclip-post { width: calc(33.33333333333333333333333% - 10px); } }
+@media only screen and (min-width: 1560px) { .whipclip-grid-type .whipclip-post { width: calc(25% - 10px); } }
+@media only screen and (min-width: 2000px) { .whipclip-grid-type .whipclip-post { width: calc(20% - 10px); } }
+
+/* Right Column */
+.whipclip-sidebar { padding: 10px 0 0 0; }
+.whipclip-sidebar .whipclip-display-options { border-bottom: 1px solid #ddd; margin-bottom: 20px; }
+.whipclip-sidebar .whipclip-embed { width: 100%; }
+.whipclip-sidebar .whipclip-post-message {}
+.whipclip-sidebar .whipclip-post-details {}
+.whipclip-sidebar .whipclip-post-details dt { display: inline; margin: 0 5px 0 0; font-weight: bold; }
+.whipclip-sidebar .whipclip-post-details dd { display: inline; margin: 0; padding: 0; }
+.whipclip-sidebar .whipclip-post-details dd:after { display: block; content: ''; margin: 0 0 10px 0; }
+
+/* Show More */
+.whipclip-show-more a { display:inline-block; text-align:center; width: 98%; color: #4e5767; text-decoration: none; padding: 10px 0px; background: #e5e5e5; font-size: 20px; font-weight: 300; outline: none; font-family: 'Open Sans', sans-serif; cursor:pointer; margin-bottom: 15px; }
+.whipclip-show-more a:hover { background: #E0E0E0; color: #F06E11 }
